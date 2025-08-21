@@ -16,7 +16,7 @@ services:
       - DISABLE_GPT4=$DISABLE_GPT4
       - ENABLE_BALANCE_QUERY=$ENABLE_BALANCE_QUERY
       - DISABLE_FAST_LINK=$DISABLE_FAST_LINK
-      - OPENAI_SB=$OPENAI_SB
+      #- OPENAI_SB=$OPENAI_SB
 
   chatgpt-next-web-proxy:
     profiles: [ "proxy" ]
