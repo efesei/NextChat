@@ -3,8 +3,8 @@ services:
   chatgpt-next-web:
     container_name: chatgpt-next-web
     image: yidadaa/chatgpt-next-web
-    ports:
-      - 3001:3000
+    #ports:
+      #- 3001:3000
     environment:
       - OPENAI_API_KEY=$OPENAI_API_KEY
       - GOOGLE_API_KEY=$GOOGLE_API_KEY
@@ -22,8 +22,8 @@ services:
 
     container_name: chatgpt-next-web-proxy
     image: yidadaa/chatgpt-next-web
-    ports:
-      - 7890:3000
+    #ports:
+      #- 7890:3000
     environment:
       - OPENAI_API_KEY=$OPENAI_API_KEY
       - GOOGLE_API_KEY=$GOOGLE_API_KEY
